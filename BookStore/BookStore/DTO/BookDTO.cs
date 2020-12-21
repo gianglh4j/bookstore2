@@ -22,11 +22,40 @@ namespace BookStore.DTO
 
     }
 
+    public class BookDTORes
+    {
+
+        public int BookId { get; set; }
+        public string BookName { get; set; }
+        public string BookImage { get; set; }
+        public int BookPrice { get; set; }
+        public bool? IsDeleted { get; set; }
+
+        public virtual ICollection<BookTypeDTOres> BookTypes { get; set; }
+       
+    }
+
+
+    public class BookTypeDTOres
+    {
+        public int BookTypeId { get; set; }
+        public string BookTypeName { get; set; }
+    }
+
+    //public class BookTypeDTOres2
+    //{
+    //    public int Amount { get; set; }
+    //    public int BookId { get; set; }
+    //    public int OrderId { get; set; }
+
+    //    public virtual Book Book { get; set; }
+    //}
 
 
 
 
- 
+
+
 
 
 

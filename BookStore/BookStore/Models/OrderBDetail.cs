@@ -9,4 +9,5 @@
         public virtual Book Book { get; set; }
         public virtual OrderB Order { get; set; }
     }
+
 }

@@ -1,7 +1,7 @@
-CREATE DATABASE BookStore;
+CREATE DATABASE BookStore1;
 GO
 
-use BookStore;
+use BookStore1;
 --CREATE TABLE UserB (
 --    UserId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 --	UserName varchar(255) NOT NULL,

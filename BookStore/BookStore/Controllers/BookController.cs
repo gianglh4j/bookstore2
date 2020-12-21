@@ -29,13 +29,13 @@ namespace BookStore.Controllers
             
         }
         [HttpGet("types/{id}")]
-        public async Task<ActionResult<IEnumerable<BookDTO>>> GetBookFollowType(int id)
+        public async Task<ActionResult<IEnumerable<BookDTORes>>> GetBookFollowType(int id)
         {
             return Ok(await _bookApplicationLogics.getBooksFollowType(id));
         }
         // GET: api/getbooks
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
+        public async Task<ActionResult<IEnumerable<BookDTORes>>> GetBooks()
         {
             try
             {
@@ -51,7 +51,7 @@ namespace BookStore.Controllers
 
         // GET: api/booktypes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<BookDTO>> GetBook(int id)
+        public async Task<ActionResult<BookDTORes>> GetBook(int id)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace BookStore.Controllers
             }
         }
 
-        // POST: api/Movies
+        // POST: api/book
    
         [HttpPost]
         public async Task<ActionResult<Book>> PostBook(BookDTO book)
@@ -114,7 +114,7 @@ namespace BookStore.Controllers
                 return CreatedAtAction(nameof(GetBook),
                     new { id = createdBook.BookId }, createdBook);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     "Error creating new book  record");
@@ -123,17 +123,13 @@ namespace BookStore.Controllers
 
         // DELETE: api/Movies/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Book>> DeleteBook(int id, bool isDeleted)
+        public async Task<ActionResult<Book>> DeleteBook(BookDTO book)
         {
             try
             {
-                BookDTO book = new BookDTO()
-                {
-                    BookId = id,
-                    IsDeleted = isDeleted
-                };
-                var updatedbook = await _bookApplicationLogics.updateBook(book);
-                return null;
+             
+                var updatedbook = await _bookApplicationLogics.deleteBook(book);
+                return updatedbook;
                 //var bookToDelete = await _bookRepository.GetBook(id);
 
                 //if (bookToDelete == null)
@@ -143,7 +139,7 @@ namespace BookStore.Controllers
 
                 //return await _bookRepository.DeleteBook(id);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     "Error deleting data");

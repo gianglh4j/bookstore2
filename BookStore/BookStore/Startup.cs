@@ -57,9 +57,14 @@ namespace BookStore
             services.AddScoped<IBook_BookTypeLogic, Book_BookTypeLogic>();
             services.AddScoped<IBook_BookTypeRepository, Book_BookTypeRepository>();
 
+            //booktype
+            services.AddScoped<IBookTypeRepository, BookTypeRepository>();
+            services.AddScoped<IBookTypeLogic, BookTypeLogic>();
+            services.AddScoped<IBookTypeApplicationLogic, BookTypeApplicationLogic>();
+
 
             //generic but not use 
-           
+
 
 
             services.AddDbContext<BookStoredbContext>(options =>

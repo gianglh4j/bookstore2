@@ -18,6 +18,8 @@ namespace BookStore.DomainLogic
 
         Task<BookType> getBooksFollowType(int typeId);
 
+        Task<Book> DeleteBook(Book book);
+
     }
     public class BookLogic : IBookLogic
     {
@@ -43,15 +45,28 @@ namespace BookStore.DomainLogic
 
 
             //add to Book_BookType table
-            foreach (BookBookType bookType in book.BookBookType)
-            {
-                BookBookType book_BookType = new BookBookType() { BookTypeId = bookType.BookTypeId, BookId = result.BookId };
-                await _book_BookTypeLogic.addBook_BookType(book_BookType);
+            //foreach (BookBookType bookType in book.BookBookType)
+            //{
+            //    BookBookType book_BookType = new BookBookType() { BookTypeId = bookType.BookTypeId, BookId = result.BookId };
+            //   var a =  await _book_BookTypeLogic.addBook_BookType(book_BookType);
 
-            }
+            //}
+
+
+            //for(int i = 0; i < book.BookBookType.Count; i++)
+            //{
+            //    BookBookType book_BookType = new BookBookType() { BookTypeId = book.BookBookType.ToArray()[i].BookTypeId, BookId = result.BookId };
+            //    await _book_BookTypeLogic.addBook_BookType(book_BookType);
+            //}
 
             return result;
 
+        }
+
+        public async Task<Book> DeleteBook(Book book)
+        {
+            var result = await _bookRepository.DeleteBook(book);
+            return result;
         }
 
         public async Task<Book> getBook(int bookId)
@@ -74,22 +89,15 @@ namespace BookStore.DomainLogic
 
         public async Task<Book> UpdateBook(Book book)
         {
-            var result = await _bookRepository.UpdateBook(book);
-
-        
-            if(book.BookBookType != null) {
+            if (book.BookBookType != null)
+            {
                 //remove last book_bookType 
                 await _book_BookTypeLogic.deleteBook_BookTypes(book.BookId);
-                //add new book-booktypes 
-                foreach (BookBookType bookType in book.BookBookType)
-                {
-                    BookBookType book_BookType = new BookBookType() { BookTypeId = bookType.BookTypeId, BookId = result.BookId };
-                    await _book_BookTypeLogic.addBook_BookType(book_BookType);
 
-                }
             }
-            
-            
+
+            var result = await _bookRepository.UpdateBook(book);
+
             return result;
 
         }

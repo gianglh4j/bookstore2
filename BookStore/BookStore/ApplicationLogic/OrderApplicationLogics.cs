@@ -12,15 +12,15 @@ namespace BookStore.ApplicationLogic
 
     public interface IOrderApplicationLogics
     {
-        OrderB setOrderPost(OrderDTO orderDTO);
+     
 
         Task<OrderB> addOrder(OrderDTO orderDTO);
 
-        Task<OrderDTO> updateOrderB(OrderDTO orderDTO);
+        Task<OrderB> updateOrderB(OrderDTO orderDTO);
 
-        Task<IEnumerable<OrderB>> getOrders();
+        Task<IEnumerable<OrderDTOres>> getOrders();
 
-        Task<OrderDTO> getOder(int bookId);
+        Task<OrderDTOres> getOder(int orderId);
 
     }
 
@@ -42,24 +42,26 @@ namespace BookStore.ApplicationLogic
 
         }
 
-        public Task<OrderDTO> getOder(int bookId)
+        public async Task<OrderDTOres> getOder(int orderId)
         {
-            throw new NotImplementedException();
+            var order = await _orderLogic.getOrder(orderId);
+            var destinations = mapper.Map<OrderB, OrderDTOres>(order);
+            return destinations;
         }
 
-        public async Task<IEnumerable<OrderB>> getOrders()
+        public async Task<IEnumerable<OrderDTOres>> getOrders()
         {
-            return await _orderLogic.getOrders();
+            var orders = await _orderLogic.getOrders();
+            var destinations = mapper.Map<IEnumerable<OrderB>, IEnumerable<OrderDTOres>>(orders);
+            return destinations;
         }
 
-        public OrderB setOrderPost(OrderDTO orderDTO)
-        {
-            throw new NotImplementedException();
-        }
 
-        public Task<OrderDTO> updateOrderB(OrderDTO orderDTO)
+
+        public async Task<OrderB> updateOrderB(OrderDTO orderDTO)
         {
-            throw new NotImplementedException();
+            OrderB newOrderB = mapper.Map<OrderB>(orderDTO);
+            return await _orderLogic.UpdateOrder(newOrderB);
         }
     }
 }

@@ -16,12 +16,14 @@ namespace BookStore.ApplicationLogic
         Task<Book> addBook(BookDTO bookDTO);
 
         Task<Book> updateBook(BookDTO bookDTO);
+        Task<Book> deleteBook(BookDTO bookDTO);
 
-        Task<IEnumerable<BookDTO>> getBooksFollowType(int typeId);
+        Task<IEnumerable<BookDTORes>> getBooksFollowType(int typeId);
 
-        Task<IEnumerable<BookDTO>> getBooks();
+        Task<IEnumerable<BookDTORes>> getBooks();
 
-        Task<BookDTO> getBook(int bookId);
+        Task<BookDTORes> getBook(int bookId);
+
 
     }
 
@@ -44,28 +46,37 @@ namespace BookStore.ApplicationLogic
 
         }
 
-        public async Task<BookDTO> getBook(int bookId)
+        public async Task<Book> deleteBook(BookDTO bookDTO)
+        {
+            Book newBook = setBookPost(bookDTO);
+            return await _bookLogic.DeleteBook(newBook);
+        }
+
+        public async Task<BookDTORes> getBook(int bookId)
         {
             var book =  await _bookLogic.getBook(bookId);
-            var destinations = mapper.Map<Book, BookDTO>(book);
+            var destinations = mapper.Map<Book, BookDTORes>(book);
             return destinations;
         }
 
-        public async Task<IEnumerable<BookDTO>> getBooks()
+        public async Task<IEnumerable<BookDTORes>> getBooks()
         {
             var  books =  await _bookLogic.getBooks();
-            var destinations = mapper.Map<IEnumerable<Book>, IEnumerable<BookDTO>>(books);
+            var destinations = mapper.Map<IEnumerable<Book>, IEnumerable<BookDTORes>>(books);
             return destinations;
 
         }
 
-        public async Task<IEnumerable<BookDTO>> getBooksFollowType(int typeId)
+        public async Task<IEnumerable<BookDTORes>> getBooksFollowType(int typeId)
         {
-            var booktype =  await _bookLogic.getBooksFollowType(typeId);
+            var bookType =  await _bookLogic.getBooksFollowType(typeId);
+            var book_bookTypes = bookType.BookBookType;
+
+         var destinations = mapper.Map<IEnumerable<BookBookType>, IEnumerable<BookDTORes>>(book_bookTypes);
 
 
             // return destination.Books;
-            return null;
+            return destinations;
 
 
             //List<Book> list = new List<Book>();

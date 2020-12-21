@@ -35,15 +35,6 @@ namespace BookStore.DomainLogic
         {
             
             var result = await _orderRepository.AddOrder(order);
-
-            //add to OderB_detail
-            foreach (OrderBDetail detail in order.OrderBDetail)
-            {
-                OrderBDetail order_detail = new OrderBDetail() { BookId = detail.BookId, OrderId = result.OrderId , Amount = detail.Amount};
-                await _order_DetailRepository.AddOrderB_Detail(order_detail);
-
-            }
-
             return result;
         }
 
@@ -61,9 +52,16 @@ namespace BookStore.DomainLogic
 
         public async Task<OrderB> UpdateOrder(OrderB order)
         {
+            //if (order.OrderBDetail != null)
+            //{
+            //    //remove last book_bookType 
+            //    await _order_DetailRepository.DeleteOrderB_Detail(order.OrderId);
+
+            //}
             var result = await _orderRepository.UpdateOrder(order);
 
             return result;
+          
 
         }
 

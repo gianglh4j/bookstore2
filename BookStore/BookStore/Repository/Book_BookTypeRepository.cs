@@ -17,16 +17,17 @@ namespace BookStore.Repository
     }
     public class Book_BookTypeRepository : IBook_BookTypeRepository
     {
-        private readonly BookStoredbContext bookStoredbContext;
+        private readonly BookStoredbContext _bookStoredbContext;
         public Book_BookTypeRepository(BookStoredbContext bookStoredbContext)
         {
-            this.bookStoredbContext = bookStoredbContext;
+            this._bookStoredbContext = bookStoredbContext;
         }
 
         public async Task<BookBookType> addBook_BookType(BookBookType book_BookType)
         {
-            var result = await bookStoredbContext.BookBookType.AddAsync(book_BookType);
-            await bookStoredbContext.SaveChangesAsync();
+           // _bookStoredbContext.Entry(book_BookType).State = EntityState.Detached;
+            var result = await _bookStoredbContext.BookBookType.AddAsync(book_BookType);
+            await _bookStoredbContext.SaveChangesAsync();
             return result.Entity;
         }
 
@@ -34,9 +35,9 @@ namespace BookStore.Repository
         {
 
             //remove book_bookTypes 
-            var book_bookTypeToRemoves = await bookStoredbContext.BookBookType.Where(e => e.BookId == bookId).ToListAsync();
-            bookStoredbContext.BookBookType.RemoveRange(book_bookTypeToRemoves);
-            await bookStoredbContext.SaveChangesAsync();
+            var book_bookTypeToRemoves = await _bookStoredbContext.BookBookType.Where(e => e.BookId == bookId).ToListAsync();
+            _bookStoredbContext.BookBookType.RemoveRange(book_bookTypeToRemoves);
+            await _bookStoredbContext.SaveChangesAsync();
 
         }
 

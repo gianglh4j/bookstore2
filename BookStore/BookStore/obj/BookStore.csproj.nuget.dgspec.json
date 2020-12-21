@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\BookStore\\BookStore\\BookStore\\BookStore.csproj": {}
+    "D:\\bookstore2\\BookStore\\BookStore\\BookStore.csproj": {}
   },
   "projects": {
-    "E:\\BookStore\\BookStore\\BookStore\\BookStore.csproj": {
+    "D:\\bookstore2\\BookStore\\BookStore\\BookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+        "projectUniqueName": "D:\\bookstore2\\BookStore\\BookStore\\BookStore.csproj",
         "projectName": "BookStore",
-        "projectPath": "E:\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\BookStore\\BookStore\\BookStore\\obj\\",
+        "projectPath": "D:\\bookstore2\\BookStore\\BookStore\\BookStore.csproj",
+        "packagesPath": "C:\\Users\\lhgiang\\.nuget\\packages\\",
+        "outputPath": "D:\\bookstore2\\BookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lhgiang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

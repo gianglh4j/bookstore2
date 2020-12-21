@@ -58,7 +58,7 @@ namespace BookStore.Repository
 
         public async Task<IEnumerable<OrderB>> GetOrders()
         {
-            var result = await bookStoredbContext.OrderB.ToListAsync();
+            var result = await bookStoredbContext.OrderB.Include(o=>o.OrderBDetail).ThenInclude(od=>od.Book).ToListAsync();
             return result;
         }
 
@@ -69,11 +69,12 @@ namespace BookStore.Repository
 
             if (result != null)
             {
-                ///  result = mapper.Map<Book>(book);
+               
                 result.OrderStatus = order.OrderStatus;
-                result.OrderDate = order.OrderDate;
-                result.TotalPrice = order.TotalPrice;
-                
+                //result.OrderDate = order.OrderDate;
+                //result.TotalPrice = order.TotalPrice;
+                //result.OrderBDetail = order.OrderBDetail;
+                //result.UserId = order.UserId;
                 await bookStoredbContext.SaveChangesAsync();
 
                 return result;

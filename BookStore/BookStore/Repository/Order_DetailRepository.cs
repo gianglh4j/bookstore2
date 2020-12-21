@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BookStore.Models;
 using BookStore.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.Repository
 {
@@ -13,7 +14,7 @@ namespace BookStore.Repository
         Task<OrderBDetail> GetOrderB_Detail(int OrderB_DetailId);
         Task<OrderBDetail> AddOrderB_Detail(OrderBDetail orderB_Detail);
         Task<OrderBDetail> UpdateOrderB_Detail(OrderBDetail OrderB_Detail);
-        Task<OrderBDetail> DeleteOrderB_Detail(int OrderB_DetailId);
+        Task DeleteOrderB_Detail(int OrderB_DetailId);
 
     }
     public class Order_DetailRepository : IOrder_DetailRepository
@@ -38,9 +39,12 @@ namespace BookStore.Repository
             return result.Entity;
         }
 
-        public Task<OrderBDetail> DeleteOrderB_Detail(int OrderB_DetailId)
+        public async Task DeleteOrderB_Detail(int OrderId)
         {
-            throw new NotImplementedException();
+            //remove order-details  
+            var OrderB_Details = await bookStoredbContext.OrderBDetail.Where(e => e.OrderId == OrderId).ToListAsync();
+            bookStoredbContext.OrderBDetail.RemoveRange(OrderB_Details);
+            await bookStoredbContext.SaveChangesAsync();
         }
 
         public Task<OrderBDetail> GetOrderB_Detail(int OrderB_DetailId)

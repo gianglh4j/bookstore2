@@ -26,7 +26,8 @@ namespace BookStore.DomainLogic
 
         public async Task<BookBookType> addBook_BookType(BookBookType book_BookType)
         {
-            return await _book_BookTypeRepository.addBook_BookType(book_BookType);
+           var a =  await _book_BookTypeRepository.addBook_BookType(book_BookType);
+            return a;
         }
 
         public async Task deleteBook_BookTypes(int bookId)

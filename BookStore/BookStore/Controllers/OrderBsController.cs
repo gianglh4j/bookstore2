@@ -27,7 +27,7 @@ namespace BookStore.Controllers
 
         // GET: api/OrderBs
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<OrderB>>> GetOrderBs()
+        public async Task<ActionResult<IEnumerable<OrderDTOres>>> GetOrderBs()
         {
             try
             {
@@ -45,7 +45,7 @@ namespace BookStore.Controllers
 
         // GET: api/OrderBs/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<OrderDTO>> GetOrderB(int id)
+        public async Task<ActionResult<OrderDTOres>> GetOrderB(int id)
         {
             var orderB = await _orderApplicationLogics.getOder(id);
 
@@ -61,7 +61,7 @@ namespace BookStore.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<ActionResult<OrderDTO>> PutOrderB(int id, OrderDTO order)
+        public async Task<ActionResult<OrderB>> PutOrderB(int id, OrderDTO order)
         {
             if (id != order.OrderId)
             {

@@ -18,5 +18,26 @@ namespace BookStore.DTO
 
     }
 
-    
+    public class OrderDTOres
+    {
+        public int OrderId { get; set; }
+        public int UserId { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string OrderStatus { get; set; }
+        public int? TotalPrice { get; set; }
+
+        public virtual ICollection<BookResOrder> Books { get; set; }
+
+    }
+
+    public class BookResOrder
+    {
+
+        public int Amount { get; set; }
+        public int BookId { get; set; }
+        public string BookName { get; set; }
+
+    }
+
+
 }

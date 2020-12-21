@@ -8,28 +8,30 @@ using BookStore.Data;
 using BookStore.Repository;
 using System;
 using Microsoft.AspNetCore.Http;
-
+using BookStore.ApplicationLogic;
+using BookStore.DTO;
 namespace BookStore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class BookTypesController : ControllerBase
     {
-        
 
-        private readonly IBookTypeRepository _bookTypeRepository;
-        public BookTypesController(IBookTypeRepository bookTypeRepository)
+
+        private readonly IBookTypeApplicationLogic _bookTypeApplicationLogic;
+        
+        public BookTypesController(IBookTypeApplicationLogic bookTypeApplicationLogic)
         {
-            _bookTypeRepository = bookTypeRepository;
+            _bookTypeApplicationLogic = bookTypeApplicationLogic;
         }
 
         // GET: api/getbooktypes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<BookType>>> GetBookTypes()
+        public async Task<ActionResult<IEnumerable<BookTypeDTO>>> GetBookTypes()
         {
             try
             {
-                return Ok(await _bookTypeRepository.GetBookTypes());
+                return Ok(await _bookTypeApplicationLogic.getBookTypes());
             }
             catch (Exception)
             {
@@ -40,11 +42,11 @@ namespace BookStore.Controllers
 
         // GET: api/booktypes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<BookType>> GetBookType(int id)
+        public async Task<ActionResult<BookTypeDTO>> GetBookType(int id)
         {
             try
             {
-                var result = await _bookTypeRepository.GetBookType(id);
+                var result = await _bookTypeApplicationLogic.getBookType(id);
 
                 if (result == null) return NotFound();
 
@@ -60,38 +62,29 @@ namespace BookStore.Controllers
         // PUT: api/booktypes/5
        
         [HttpPut("{id}")]
-        public async Task<ActionResult<BookType>> PutBookType(int id, BookType booktype)
+        public async Task<ActionResult<BookType>> PutBookType(int id, BookTypeDTO booktype)
         {
-            try
+            if (id != booktype.BookTypeId)
             {
-                if (id != booktype.BookTypeId)
-                    return BadRequest("booktype ID mismatch");
-
-                var booktypeToUpdate = await _bookTypeRepository.GetBookType(id);
-
-                if (booktypeToUpdate == null)
-                    return NotFound($"book type with Id = {id} not found");
-
-                return await _bookTypeRepository.UpdateBookType(booktype);
+                return BadRequest();
             }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error updating data");
-            }
+
+            return await _bookTypeApplicationLogic.updateBookType(booktype);
+
+           
         }
 
         // POST: api/booktypes
    
         [HttpPost]
-        public async Task<ActionResult<BookType>> PostBookType(BookType bookType)
+        public async Task<ActionResult<BookType>> PostBookType(BookTypeDTO bookType)
         {
             try
             {
                 if (bookType == null)
                     return BadRequest();
 
-                var createdBookType = await _bookTypeRepository.AddBookType(bookType);
+                var createdBookType = await _bookTypeApplicationLogic.addBookType(bookType);
 
                 return CreatedAtAction(nameof(GetBookType),
                     new { id = createdBookType.BookTypeId }, createdBookType);
@@ -102,29 +95,6 @@ namespace BookStore.Controllers
                     "Error creating new book type record");
             }
         }
-
-        // DELETE: api/Movies/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<BookType>> DeleteBookType(int id)
-        {
-            try
-            {
-                var bookTypeToDelete = await _bookTypeRepository.GetBookType(id);
-
-                if (bookTypeToDelete == null)
-                {
-                    return NotFound($"book type with Id = {id} not found");
-                }
-
-                return await _bookTypeRepository.DeleteBookType(id);
-            }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error deleting data");
-            }
-        }
-
        
     }
 }

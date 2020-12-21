@@ -17,7 +17,7 @@ namespace BookStore.Repository
         Task<BookType> GetBooksFollowType(int typeId);
         Task<Book> AddBook(Book book);
         Task<Book> UpdateBook(Book book);
-        Task<Book> DeleteBook(int bookId);
+        Task<Book> DeleteBook(Book book);
     }
     public class BookRepository : IBookRepository
     {
@@ -66,6 +66,7 @@ namespace BookStore.Repository
                 result.BookImage = book.BookImage;
                 result.BookPrice = book.BookPrice;
                 result.IsDeleted = book.IsDeleted;
+                result.BookBookType = book.BookBookType;
                 await bookStoredbContext.SaveChangesAsync();
 
                 return result;
@@ -73,19 +74,32 @@ namespace BookStore.Repository
             return null;
         }
 
-        public async Task<Book> DeleteBook(int bookId)
+        public async Task<Book> DeleteBook(Book book)
         {
             //delete Book 
 
+            //var result = await bookStoredbContext.Book
+            //    .FirstOrDefaultAsync(e => e.BookId == bookId);
+            //if (result != null)
+            //{
+            //    bookStoredbContext.Book.Remove(result);
+            //    await bookStoredbContext.SaveChangesAsync();
+            //    return result;
+            //}
+            //return null;
+
             var result = await bookStoredbContext.Book
-                .FirstOrDefaultAsync(e => e.BookId == bookId);
+                .FirstOrDefaultAsync(e => e.BookId == book.BookId);
+
             if (result != null)
             {
-                bookStoredbContext.Book.Remove(result);
+                result.IsDeleted = book.IsDeleted;
                 await bookStoredbContext.SaveChangesAsync();
+
                 return result;
             }
             return null;
+
 
         }
 
