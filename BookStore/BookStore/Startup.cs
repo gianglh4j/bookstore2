@@ -17,77 +17,96 @@ using AutoMapper;
 using BookStore.DTO;
 using BookStore.ApplicationLogic;
 using BookStore.DomainLogic;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using NLog;
+using System.IO;
+using LoggerService;
+using Contracts;
+using BookStore.Extensions;
+
 namespace BookStore
 {
     public class Startup
     {
+   
+        //public Startup(IWebHostEnvironment env)
+        //{
+
+        //    var builder = new ConfigurationBuilder()
+        //        .SetBasePath(env.ContentRootPath)
+        //        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+        //        .AddEnvironmentVariables();
+        //    this.Configuration = builder.Build();
+        //}
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
         }
 
-        public IConfiguration Configuration { get; }
+
+        public IConfiguration Configuration { get; private set; }
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // register 
-         
-
-            services.AddScoped<IBookTypeRepository, BookTypeRepository>();
-
        
-
-          
-
-            //book
-            services.AddScoped<IBookApplicationLogics, BookApplicationLogics>();
-            services.AddScoped<IBookLogic, BookLogic>();
-            services.AddScoped<IBookRepository, BookRepository>();
-
-            //order
-            services.AddScoped<IOrderApplicationLogics, OrderApplicationLogics>();
-            services.AddScoped<IOrderLogic, OrderLogic>();
-            services.AddScoped<IOrderRepository, OrderRepository>();
-
-            //order_detail 
-            services.AddScoped<IOrder_DetailRepository, Order_DetailRepository>();
-
-            // book_booktype
-            services.AddScoped<IBook_BookTypeLogic, Book_BookTypeLogic>();
-            services.AddScoped<IBook_BookTypeRepository, Book_BookTypeRepository>();
-
-            //booktype
-            services.AddScoped<IBookTypeRepository, BookTypeRepository>();
-            services.AddScoped<IBookTypeLogic, BookTypeLogic>();
-            services.AddScoped<IBookTypeApplicationLogic, BookTypeApplicationLogic>();
-
-
-            //generic but not use 
-
-
-
             services.AddDbContext<BookStoredbContext>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("BookStoredbContext")));
+options.UseSqlServer(Configuration.GetConnectionString("BookStoredbContext")));
 
             // add auto mapper 
             services.AddAutoMapper
             (typeof(AutoMapperProfile).Assembly);
 
-            
+
             services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-); 
+);
+
+        }
+
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            //Nlog 
+            builder.RegisterType<LoggerManager>().As<ILoggerManager>();
+
+            builder.RegisterType<BookApplicationLogics>().As<IBookApplicationLogics>();
+            builder.RegisterType<BookLogic>().As<IBookLogic>();
+            builder.RegisterType<BookRepository>().As<IBookRepository>();
+
+            //order
+            builder.RegisterType<OrderApplicationLogics>().As<IOrderApplicationLogics>();
+            builder.RegisterType<OrderLogic>().As<IOrderLogic>();
+            builder.RegisterType<OrderRepository>().As<IOrderRepository>();
+
+            //order_detail 
+            builder.RegisterType<Order_DetailRepository>().As<IOrder_DetailRepository>();
+
+            //book_booktype
+            builder.RegisterType<Book_BookTypeLogic>().As<IBook_BookTypeLogic>();
+            builder.RegisterType<Book_BookTypeRepository>().As<IBook_BookTypeRepository>();
+
+            //booktype
+            builder.RegisterType<BookTypeRepository>().As<IBookTypeRepository>();
+            builder.RegisterType<BookTypeLogic>().As<IBookTypeLogic>();
+            builder.RegisterType<BookTypeApplicationLogic>().As<IBookTypeApplicationLogic>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerManager logger)
         {
+            // If, for some reason, you need a reference to the built container, you
+            // can use the convenience extension method GetAutofacRoot.
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            //app.ConfigureExceptionHandler(logger);
+            app.ConfigureCustomExceptionMiddleware();
             app.UseHttpsRedirection();
 
             app.UseRouting();

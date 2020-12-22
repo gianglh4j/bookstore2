@@ -478,3 +478,12 @@ D:\bookstore2\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.csproj.CopyC
 D:\bookstore2\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.dll
 D:\bookstore2\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.pdb
 D:\bookstore2\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.genruntimeconfig.cache
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\Autofac.Integration.WebApi.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\nlog.config
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\NLog.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\Contracts.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\LoggerService.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\LoggerService.pdb
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\Contracts.pdb

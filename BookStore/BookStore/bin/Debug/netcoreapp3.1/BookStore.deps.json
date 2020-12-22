@@ -26,6 +26,9 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.0",
           "Autofac": "6.1.0",
+          "Autofac.Extensions.DependencyInjection": "7.1.0",
+          "Autofac.WebApi": "3.1.0",
+          "LoggerService": "1.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.10",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.10",
@@ -319,6 +322,35 @@
         },
         "compile": {
           "lib/netstandard2.1/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/7.1.0": {
+        "dependencies": {
+          "Autofac": "6.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.10"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Autofac.WebApi/3.1.0": {
+        "dependencies": {
+          "Autofac": "6.1.0"
+        },
+        "runtime": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Autofac.Integration.WebApi.dll": {}
         }
       },
       "AutoMapper/10.1.0": {
@@ -1309,6 +1341,32 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "NLog/4.7.4": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.4.12037"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "NLog.Extensions.Logging/1.6.5": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.10",
+          "NLog": "4.7.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.6.5.1409"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/NLog.Extensions.Logging.dll": {}
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -2467,6 +2525,26 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
+        }
+      },
+      "Contracts/1.0.0": {
+        "runtime": {
+          "Contracts.dll": {}
+        },
+        "compile": {
+          "Contracts.dll": {}
+        }
+      },
+      "LoggerService/1.0.0": {
+        "dependencies": {
+          "Contracts": "1.0.0",
+          "NLog.Extensions.Logging": "1.6.5"
+        },
+        "runtime": {
+          "LoggerService.dll": {}
+        },
+        "compile": {
+          "LoggerService.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4092,6 +4170,20 @@
       "path": "autofac/6.1.0",
       "hashPath": "autofac.6.1.0.nupkg.sha512"
     },
+    "Autofac.Extensions.DependencyInjection/7.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nm6rZREZ9tjdKXu9cmT69zHkZODagjCPlRRCOhiS1VqFFis9LQnMl18L4OYr8yfCW1WAQkFDD2CNaK/kF5Eqeg==",
+      "path": "autofac.extensions.dependencyinjection/7.1.0",
+      "hashPath": "autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512"
+    },
+    "Autofac.WebApi/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yzOdwWZ7w4ojD8uLKcXQE7d/cjTSVpgZSjK9oaE/goPJQHgVLad/yua78j+o+NthFEkaZG2030F3gRRpfPo6qA==",
+      "path": "autofac.webapi/3.1.0",
+      "hashPath": "autofac.webapi.3.1.0.nupkg.sha512"
+    },
     "AutoMapper/10.1.0": {
       "type": "package",
       "serviceable": true,
@@ -4525,6 +4617,20 @@
       "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    },
+    "NLog/4.7.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gSGX/ur0P3jp17H37HW7ycXR6L1578tQbilf4HLX1t2viCDFgtwEsfHMPf0/jcuf7/qqGgoU/vKgyQ9hzxuOEQ==",
+      "path": "nlog/4.7.4",
+      "hashPath": "nlog.4.7.4.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/1.6.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f+7W4DhNkpFdg2X6fNR8Ts06TSM9Hd2BdfXem3esTFGR9cAVdQRPwf/N0H0Fc1vidrLJVETkmywXG/0Qz/lxjw==",
+      "path": "nlog.extensions.logging/1.6.5",
+      "hashPath": "nlog.extensions.logging.1.6.5.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
@@ -5309,6 +5415,16 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LoggerService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

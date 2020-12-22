@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WaS0y7fAoEu1SMcV2txdhRHptztNDACaGKa0TjRZiF/0uuVtx27cIdeJfOxlmIhtt2PLpp8HA6UZt4PO4GRbpw==",
+  "dgSpecHash": "2PyE3Ho+qiPb0Nov+ODPS2ztgM3Oqurxl+TuuFZbcGQz9apOjxFSAoGis63Mk2qMY5Fd20kBKNboY7R1RVyj4w==",
   "success": true,
   "projectFilePath": "D:\\bookstore2\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lhgiang\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
+    "C:\\Users\\lhgiang\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
+    "C:\\Users\\lhgiang\\.nuget\\packages\\autofac.webapi\\3.1.0\\autofac.webapi.3.1.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -67,6 +69,8 @@
     "C:\\Users\\lhgiang\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\lhgiang\\.nuget\\packages\\nlog\\4.7.4\\nlog.4.7.4.nupkg.sha512",
+    "C:\\Users\\lhgiang\\.nuget\\packages\\nlog.extensions.logging\\1.6.5\\nlog.extensions.logging.1.6.5.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -180,5 +184,16 @@
     "C:\\Users\\lhgiang\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Autofac.WebApi 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Autofac.WebApi",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

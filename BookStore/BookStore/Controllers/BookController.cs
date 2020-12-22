@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Http;
 using BookStore.DTO;
 using BookStore.ApplicationLogic;
 using BookStore.DomainLogic;
+using Contracts;
+using BookStore.CustomExceptionMiddleware;
 namespace BookStore.Controllers
 {
     [Route("api/[controller]")]
@@ -21,12 +23,13 @@ namespace BookStore.Controllers
 
        
         private readonly IBookApplicationLogics _bookApplicationLogics;
-   
-        public BooksController( IBookApplicationLogics bookApplicationLogics)
+        private readonly ILoggerManager _logger;
+        public BooksController( IBookApplicationLogics bookApplicationLogics, ILoggerManager logger)
         {
             
             _bookApplicationLogics = bookApplicationLogics;
-            
+            _logger = logger;
+
         }
         [HttpGet("types/{id}")]
         public async Task<ActionResult<IEnumerable<BookDTORes>>> GetBookFollowType(int id)
@@ -37,16 +40,15 @@ namespace BookStore.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BookDTORes>>> GetBooks()
         {
-            try
-            {
+           
+                _logger.LogInfo("Here is info message from the controller.");
 
-                return Ok(await _bookApplicationLogics.getBooks());
-            }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error retrieving data from the database");
-            }
+            var books = Ok(await _bookApplicationLogics.getBooks());
+           throw new AppException("Exception while fetching all the books from the storage.");
+            return books;
+
+
+
         }
 
         // GET: api/booktypes/5
