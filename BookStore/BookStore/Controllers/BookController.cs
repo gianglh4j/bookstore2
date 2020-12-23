@@ -38,18 +38,33 @@ namespace BookStore.Controllers
         }
         // GET: api/getbooks
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<BookDTORes>>> GetBooks()
+       
+        public async Task<ActionResult> GetBooks()
         {
            
                 _logger.LogInfo("Here is info message from the controller.");
 
             var books = Ok(await _bookApplicationLogics.getBooks());
-           throw new AppException("Exception while fetching all the books from the storage.");
+            throw new KeyNotFoundException("Exception while fetching all the books from the storage.");
             return books;
 
 
 
         }
+
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<BookDTORes>>> GetBooks()
+        //{
+
+        //    _logger.LogInfo("Here is info message from the controller.");
+
+        //    var books = Ok(await _bookApplicationLogics.getBooks());
+        //    throw new KeyNotFoundException("Exception while fetching all the books from the storage.");
+        //    return books;
+
+
+
+        //}
 
         // GET: api/booktypes/5
         [HttpGet("{id}")]

@@ -28,6 +28,16 @@ namespace BookStore.DTO
 
         public virtual ICollection<BookResOrder> Books { get; set; }
 
+        public UserOrderDTOres userOrderDTOres { get; set; }
+
+
+    }
+    public class UserOrderDTOres
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public string phone { get; set; }
+        public string email { get; set; }
     }
 
     public class BookResOrder

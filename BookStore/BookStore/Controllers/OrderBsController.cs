@@ -23,24 +23,31 @@ namespace BookStore.Controllers
         {
             _context = context;
             this._orderApplicationLogics = orderApplicationLogics;
+            
         }
 
         // GET: api/OrderBs
         [HttpGet]
         public async Task<ActionResult<IEnumerable<OrderDTOres>>> GetOrderBs()
         {
-            try
+            string header = Request.Headers["Authorization"];
+            ValidateLogic validateLogic = new ValidateLogic();
+            if(header != null)
             {
+                var validateResult = await validateLogic.validateAdminToken(header);
 
-                return Ok(await _orderApplicationLogics.getOrders());
+                if (validateResult.statuscode == 200)
+                {
+                    return Ok(await _orderApplicationLogics.getOrders());
+                }
             }
-            catch (Exception)
+            else
             {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error retrieving data from the database");
+                throw new ApplicationException("your denied to access");
             }
            
-            
+
+            return null;
         }
 
         // GET: api/OrderBs/5

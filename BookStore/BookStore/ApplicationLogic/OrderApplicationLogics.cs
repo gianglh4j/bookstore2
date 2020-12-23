@@ -6,13 +6,18 @@ using BookStore.Models;
 using BookStore.DTO;
 using AutoMapper;
 using BookStore.DomainLogic;
+using System.Net.Http;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace BookStore.ApplicationLogic
 {
 
+
     public interface IOrderApplicationLogics
     {
-     
+
+       
 
         Task<OrderB> addOrder(OrderDTO orderDTO);
 
@@ -26,6 +31,7 @@ namespace BookStore.ApplicationLogic
 
     public class OrderApplicationLogics : IOrderApplicationLogics
     {
+        private static readonly HttpClient client = new HttpClient();
         private readonly IMapper mapper;
         private readonly  IOrderLogic _orderLogic;
         public OrderApplicationLogics(IMapper mapper, IOrderLogic orderLogic)
@@ -44,15 +50,37 @@ namespace BookStore.ApplicationLogic
 
         public async Task<OrderDTOres> getOder(int orderId)
         {
+
             var order = await _orderLogic.getOrder(orderId);
             var destinations = mapper.Map<OrderB, OrderDTOres>(order);
-            return destinations;
+            return await setUserToOrder(destinations);
+           
+        }
+        public  async Task<OrderDTOres> setUserToOrder( OrderDTOres order)
+        {
+            var responseTask = await client.GetAsync($"https://jsonplaceholder.typicode.com/users/{order.UserId}");
+            var userString = responseTask.Content.ReadAsStringAsync().Result;
+            // JObject json = JObject.Parse(userString);
+            var myJsonObject = JsonConvert.DeserializeObject<UserOrderDTOres>(userString);
+            order.userOrderDTOres = myJsonObject;
+            return order;
         }
 
         public async Task<IEnumerable<OrderDTOres>> getOrders()
         {
+
+
             var orders = await _orderLogic.getOrders();
             var destinations = mapper.Map<IEnumerable<OrderB>, IEnumerable<OrderDTOres>>(orders);
+
+
+            // get user info in order
+            foreach (OrderDTOres order in destinations)
+            {
+
+              await setUserToOrder(order);
+            } 
+            //var result = responseTask.
             return destinations;
         }
 

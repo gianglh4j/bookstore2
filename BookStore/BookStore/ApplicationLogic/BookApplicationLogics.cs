@@ -63,6 +63,7 @@ namespace BookStore.ApplicationLogic
         {
             var  books =  await _bookLogic.getBooks();
             var destinations = mapper.Map<IEnumerable<Book>, IEnumerable<BookDTORes>>(books);
+
             return destinations;
 
         }

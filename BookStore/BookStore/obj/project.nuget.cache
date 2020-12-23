@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2PyE3Ho+qiPb0Nov+ODPS2ztgM3Oqurxl+TuuFZbcGQz9apOjxFSAoGis63Mk2qMY5Fd20kBKNboY7R1RVyj4w==",
+  "dgSpecHash": "xNc6OVyQMqXBYw46GuPpNZudNvTIVY2XTXQTHf64d0jKVPH1JjyFennUnK0QDLZCxNsxLue13CU06U+JrhIVWQ==",
   "success": true,
   "projectFilePath": "D:\\bookstore2\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lhgiang\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
-    "C:\\Users\\lhgiang\\.nuget\\packages\\autofac.webapi\\3.1.0\\autofac.webapi.3.1.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -184,16 +183,5 @@
     "C:\\Users\\lhgiang\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\lhgiang\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Autofac.WebApi 3.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
-      "libraryId": "Autofac.WebApi",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }
