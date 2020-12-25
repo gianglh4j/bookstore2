@@ -1,0 +1,28 @@
+<div>
+    <h1>My Products</h1>
+    <button type="button" >Create new product</button>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Book Name</th>
+                <th>BookImage</th>
+                <th>BookPrice</th>
+                <th>IsDeleted</th>                            
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{book.bookName}}</td>
+                <td>{{book.bookImage}}</td>
+                <td>{{book.bookPrice}}</td>
+                <td>{{book.isDeleted}}</td>
+                <td>
+                    <button type="button">Update</button>
+                    <button type="button" (click)="deleteBook(book)">Remove</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

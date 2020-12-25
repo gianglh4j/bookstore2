@@ -24,6 +24,7 @@ using System.IO;
 using LoggerService;
 using Contracts;
 using BookStore.Extensions;
+using Microsoft.IdentityModel.Tokens;
 
 namespace BookStore
 {
@@ -43,6 +44,7 @@ namespace BookStore
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+           
             LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
         }
 
@@ -53,13 +55,46 @@ namespace BookStore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-       
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy("Policy1",
+            //        builder =>
+            //        {
+            //            builder.WithOrigins("http://localhost:4200/",
+            //                                "http://www.contoso.com");
+            //        });
+
+            //    options.AddPolicy("AnotherPolicy",
+            //        builder =>
+            //        {
+            //            builder.WithOrigins("http://www.contoso.com")
+            //                                .AllowAnyHeader()
+            //                                .AllowAnyMethod();
+            //        });
+            //});
+
             services.AddDbContext<BookStoredbContext>(options =>
 options.UseSqlServer(Configuration.GetConnectionString("BookStoredbContext")));
 
             // add auto mapper 
             services.AddAutoMapper
             (typeof(AutoMapperProfile).Assembly);
+
+
+           // services.AddAuthentication("Bearer")
+           //.AddJwtBearer("Bearer", options =>
+           //{
+           //    options.Authority = "https://localhost:5001";
+
+           //    options.TokenValidationParameters = new TokenValidationParameters
+           //    {
+           //        ValidateAudience = false
+           //    };
+           //});
 
 
             services.AddControllers().AddNewtonsoftJson(options =>
@@ -108,9 +143,11 @@ options.UseSqlServer(Configuration.GetConnectionString("BookStoredbContext")));
             //app.ConfigureExceptionHandler(logger);
             app.ConfigureCustomExceptionMiddleware();
             app.UseHttpsRedirection();
-
+            app.UseCors(options => options.AllowAnyOrigin());
+           // app.UseCors();
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

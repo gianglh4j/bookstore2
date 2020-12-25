@@ -13,10 +13,13 @@ using BookStore.ApplicationLogic;
 using BookStore.DomainLogic;
 using Contracts;
 using BookStore.CustomExceptionMiddleware;
+using Microsoft.AspNetCore.Cors;
+
 namespace BookStore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+   // [EnableCors("AllowOrigin")]
     public class BooksController : ControllerBase
     {
         
@@ -32,20 +35,21 @@ namespace BookStore.Controllers
 
         }
         [HttpGet("types/{id}")]
+    
         public async Task<ActionResult<IEnumerable<BookDTORes>>> GetBookFollowType(int id)
         {
             return Ok(await _bookApplicationLogics.getBooksFollowType(id));
         }
         // GET: api/getbooks
         [HttpGet]
-       
+    
         public async Task<ActionResult> GetBooks()
         {
            
                 _logger.LogInfo("Here is info message from the controller.");
 
             var books = Ok(await _bookApplicationLogics.getBooks());
-            throw new KeyNotFoundException("Exception while fetching all the books from the storage.");
+            //throw new KeyNotFoundException("Exception while fetching all the books from the storage.");
             return books;
 
 
@@ -68,6 +72,7 @@ namespace BookStore.Controllers
 
         // GET: api/booktypes/5
         [HttpGet("{id}")]
+      
         public async Task<ActionResult<BookDTORes>> GetBook(int id)
         {
             try
@@ -88,6 +93,7 @@ namespace BookStore.Controllers
         // PUT: api/booktypes/5
        
         [HttpPut("{id}")]
+ 
         public async Task<ActionResult<Book>> PutBook(int id, BookDTO book)
         {
             try
@@ -112,6 +118,7 @@ namespace BookStore.Controllers
         // POST: api/book
    
         [HttpPost]
+      
         public async Task<ActionResult<Book>> PostBook(BookDTO book)
         {
             
@@ -138,8 +145,9 @@ namespace BookStore.Controllers
             }
         }
 
-        // DELETE: api/Movies/5
-        [HttpDelete("{id}")]
+        // DELETE: api/books/delete/id
+        [HttpPost("delete/{id}")]
+      
         public async Task<ActionResult<Book>> DeleteBook(BookDTO book)
         {
             try

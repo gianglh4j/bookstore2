@@ -486,3 +486,7 @@ D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\Contracts.dll
 D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\LoggerService.dll
 D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\LoggerService.pdb
 D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\Contracts.pdb
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\IdentityModel.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\IdentityModel.AspNetCore.OAuth2Introspection.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\IdentityServer4.AccessTokenValidation.dll
+D:\bookstore2\BookStore\BookStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

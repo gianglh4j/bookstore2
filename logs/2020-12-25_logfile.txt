@@ -1,0 +1,297 @@
+2020-12-25 08:51:37.5437 INFO Here is info message from the controller.
+2020-12-25 10:08:38.3015 INFO Here is info message from the controller.
+2020-12-25 10:13:12.0988 INFO Here is info message from the controller.
+2020-12-25 10:37:49.9197 INFO Here is info message from the controller.
+2020-12-25 10:39:29.4878 INFO Here is info message from the controller.
+2020-12-25 11:24:46.0258 INFO Here is info message from the controller.
+2020-12-25 11:35:16.6911 INFO Here is info message from the controller.
+2020-12-25 11:35:16.7055 INFO Here is info message from the controller.
+2020-12-25 11:39:30.2174 INFO Here is info message from the controller.
+2020-12-25 11:42:42.1990 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:42:56.7646 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:42:57.9806 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:42:59.5976 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:43:45.8345 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:46:14.7267 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:51:46.3222 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:51:55.8459 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:51:56.8351 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:51:57.8399 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:57:43.7816 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 11:57:43.7816 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 13:22:32.6656 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 13:22:37.4699 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 13:33:35.9022 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 13:34:06.3475 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 13:34:22.7730 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 13:34:40.6765 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 13:34:49.7613 INFO Here is info message from the controller.
+2020-12-25 13:35:27.7514 INFO Here is info message from the controller.
+2020-12-25 13:37:16.0815 INFO Here is info message from the controller.
+2020-12-25 13:37:44.6018 INFO Here is info message from the controller.
+2020-12-25 13:38:18.9566 INFO Here is info message from the controller.
+2020-12-25 13:39:51.3892 INFO Here is info message from the controller.
+2020-12-25 13:40:02.4352 INFO Here is info message from the controller.
+2020-12-25 13:40:04.7032 INFO Here is info message from the controller.
+2020-12-25 13:40:10.9186 INFO Here is info message from the controller.
+2020-12-25 13:40:12.2905 INFO Here is info message from the controller.
+2020-12-25 13:40:12.9175 INFO Here is info message from the controller.
+2020-12-25 13:40:13.1848 INFO Here is info message from the controller.
+2020-12-25 13:40:14.0762 INFO Here is info message from the controller.
+2020-12-25 13:40:40.5418 INFO Here is info message from the controller.
+2020-12-25 13:42:02.5625 INFO Here is info message from the controller.
+2020-12-25 13:42:05.9138 INFO Here is info message from the controller.
+2020-12-25 13:42:49.2300 INFO Here is info message from the controller.
+2020-12-25 13:42:51.4532 INFO Here is info message from the controller.
+2020-12-25 13:42:56.6504 INFO Here is info message from the controller.
+2020-12-25 13:45:30.5119 INFO Here is info message from the controller.
+2020-12-25 13:46:56.0939 INFO Here is info message from the controller.
+2020-12-25 13:46:57.2106 INFO Here is info message from the controller.
+2020-12-25 13:48:01.1319 INFO Here is info message from the controller.
+2020-12-25 13:48:06.4642 INFO Here is info message from the controller.
+2020-12-25 13:49:33.8822 INFO Here is info message from the controller.
+2020-12-25 13:49:39.9176 INFO Here is info message from the controller.
+2020-12-25 13:49:40.8223 INFO Here is info message from the controller.
+2020-12-25 13:49:41.4787 INFO Here is info message from the controller.
+2020-12-25 13:49:41.7161 INFO Here is info message from the controller.
+2020-12-25 13:51:07.2905 INFO Here is info message from the controller.
+2020-12-25 13:52:10.4680 INFO Here is info message from the controller.
+2020-12-25 13:53:23.0094 INFO Here is info message from the controller.
+2020-12-25 13:53:36.9940 INFO Here is info message from the controller.
+2020-12-25 13:54:00.6841 INFO Here is info message from the controller.
+2020-12-25 13:54:05.3952 INFO Here is info message from the controller.
+2020-12-25 13:54:06.5860 INFO Here is info message from the controller.
+2020-12-25 13:54:09.7893 INFO Here is info message from the controller.
+2020-12-25 13:56:26.0227 INFO Here is info message from the controller.
+2020-12-25 13:57:20.2788 INFO Here is info message from the controller.
+2020-12-25 13:57:21.0056 INFO Here is info message from the controller.
+2020-12-25 14:01:28.2822 INFO Here is info message from the controller.
+2020-12-25 14:03:26.1757 INFO Here is info message from the controller.
+2020-12-25 14:03:29.1090 INFO Here is info message from the controller.
+2020-12-25 14:03:31.7364 INFO Here is info message from the controller.
+2020-12-25 14:03:32.7056 INFO Here is info message from the controller.
+2020-12-25 14:03:35.0691 INFO Here is info message from the controller.
+2020-12-25 14:03:35.9572 INFO Here is info message from the controller.
+2020-12-25 14:03:36.6770 INFO Here is info message from the controller.
+2020-12-25 14:03:45.1066 INFO Here is info message from the controller.
+2020-12-25 14:03:46.2460 INFO Here is info message from the controller.
+2020-12-25 14:03:46.8044 INFO Here is info message from the controller.
+2020-12-25 14:03:47.4124 INFO Here is info message from the controller.
+2020-12-25 14:03:47.6846 INFO Here is info message from the controller.
+2020-12-25 14:03:47.9977 INFO Here is info message from the controller.
+2020-12-25 14:03:48.2765 INFO Here is info message from the controller.
+2020-12-25 14:03:48.6530 INFO Here is info message from the controller.
+2020-12-25 14:03:48.8526 INFO Here is info message from the controller.
+2020-12-25 14:03:49.1569 INFO Here is info message from the controller.
+2020-12-25 14:03:49.8925 INFO Here is info message from the controller.
+2020-12-25 14:03:50.1657 INFO Here is info message from the controller.
+2020-12-25 14:03:50.4848 INFO Here is info message from the controller.
+2020-12-25 14:03:51.4318 INFO Here is info message from the controller.
+2020-12-25 14:03:51.8447 INFO Here is info message from the controller.
+2020-12-25 14:09:59.3852 INFO Here is info message from the controller.
+2020-12-25 14:10:40.3554 INFO Here is info message from the controller.
+2020-12-25 14:10:49.6196 INFO Here is info message from the controller.
+2020-12-25 14:11:59.8632 INFO Here is info message from the controller.
+2020-12-25 14:12:14.9486 INFO Here is info message from the controller.
+2020-12-25 14:12:47.0885 INFO Here is info message from the controller.
+2020-12-25 14:15:25.7399 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 14:15:27.5676 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 14:15:52.6157 ERROR Something went wrong: System.InvalidOperationException: Endpoint BookStore.Controllers.BooksController.GetBooks (BookStore) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() inside the call to Configure(..) in the application startup code. The call to app.UseAuthorization() must appear between app.UseRouting() and app.UseEndpoints(...).
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-25 14:16:34.7358 INFO Here is info message from the controller.
+2020-12-25 14:19:39.4295 INFO Here is info message from the controller.
+2020-12-25 14:21:26.1416 INFO Here is info message from the controller.
+2020-12-25 14:27:24.1495 INFO Here is info message from the controller.
+2020-12-25 14:28:10.0267 INFO Here is info message from the controller.
+2020-12-25 14:28:10.8344 INFO Here is info message from the controller.
+2020-12-25 14:30:01.7895 INFO Here is info message from the controller.
+2020-12-25 14:31:55.6765 INFO Here is info message from the controller.
+2020-12-25 14:35:26.8244 INFO Here is info message from the controller.
+2020-12-25 14:35:27.1873 INFO Here is info message from the controller.
+2020-12-25 14:35:27.9198 INFO Here is info message from the controller.
+2020-12-25 14:36:31.6235 INFO Here is info message from the controller.
+2020-12-25 14:44:54.7358 INFO Here is info message from the controller.
+2020-12-25 14:44:56.1330 INFO Here is info message from the controller.
+2020-12-25 14:44:56.2074 INFO Here is info message from the controller.
+2020-12-25 14:44:56.5994 INFO Here is info message from the controller.
+2020-12-25 14:46:12.4844 INFO Here is info message from the controller.
+2020-12-25 14:46:14.7429 INFO Here is info message from the controller.
+2020-12-25 14:46:14.8832 INFO Here is info message from the controller.
+2020-12-25 14:46:20.8159 INFO Here is info message from the controller.
+2020-12-25 14:46:30.2675 INFO Here is info message from the controller.
+2020-12-25 14:47:15.0050 INFO Here is info message from the controller.
+2020-12-25 14:47:15.3070 INFO Here is info message from the controller.
+2020-12-25 14:47:15.3861 INFO Here is info message from the controller.
+2020-12-25 14:47:16.6006 INFO Here is info message from the controller.
+2020-12-25 14:47:24.1748 INFO Here is info message from the controller.
+2020-12-25 14:47:26.9014 INFO Here is info message from the controller.
+2020-12-25 14:51:25.3134 INFO Here is info message from the controller.
+2020-12-25 14:51:27.0774 INFO Here is info message from the controller.
+2020-12-25 14:51:27.5992 INFO Here is info message from the controller.
+2020-12-25 14:51:28.1656 INFO Here is info message from the controller.
+2020-12-25 14:51:38.2096 INFO Here is info message from the controller.
+2020-12-25 14:51:40.8487 INFO Here is info message from the controller.
+2020-12-25 14:51:50.8084 INFO Here is info message from the controller.
+2020-12-25 14:53:37.1678 INFO Here is info message from the controller.
+2020-12-25 14:53:37.9266 INFO Here is info message from the controller.
+2020-12-25 14:53:38.8464 INFO Here is info message from the controller.
+2020-12-25 14:53:39.1737 INFO Here is info message from the controller.
+2020-12-25 14:53:39.4894 INFO Here is info message from the controller.
+2020-12-25 14:53:40.1388 INFO Here is info message from the controller.
+2020-12-25 14:57:57.4335 INFO Here is info message from the controller.
+2020-12-25 14:57:57.7110 INFO Here is info message from the controller.
+2020-12-25 14:58:04.6157 INFO Here is info message from the controller.
+2020-12-25 14:59:33.3894 INFO Here is info message from the controller.
+2020-12-25 15:15:34.3825 INFO Here is info message from the controller.
+2020-12-25 15:15:45.2691 INFO Here is info message from the controller.
+2020-12-25 15:16:27.6835 INFO Here is info message from the controller.
+2020-12-25 15:17:03.1721 INFO Here is info message from the controller.
+2020-12-25 15:17:05.2576 INFO Here is info message from the controller.
+2020-12-25 15:22:18.0568 INFO Here is info message from the controller.
+2020-12-25 15:22:39.0508 INFO Here is info message from the controller.
+2020-12-25 15:23:10.1755 INFO Here is info message from the controller.
+2020-12-25 15:26:30.7028 INFO Here is info message from the controller.
+2020-12-25 15:26:35.2046 INFO Here is info message from the controller.
+2020-12-25 15:29:15.1084 INFO Here is info message from the controller.
+2020-12-25 15:30:07.3112 INFO Here is info message from the controller.
+2020-12-25 15:30:31.1889 INFO Here is info message from the controller.
+2020-12-25 15:30:54.4678 INFO Here is info message from the controller.
+2020-12-25 15:31:17.2184 INFO Here is info message from the controller.
+2020-12-25 15:31:42.0840 INFO Here is info message from the controller.
+2020-12-25 15:31:43.6196 INFO Here is info message from the controller.
+2020-12-25 15:31:44.6143 INFO Here is info message from the controller.
+2020-12-25 15:31:45.5032 INFO Here is info message from the controller.
+2020-12-25 15:31:46.3318 INFO Here is info message from the controller.
+2020-12-25 15:31:49.5152 INFO Here is info message from the controller.
+2020-12-25 17:04:36.5020 INFO Here is info message from the controller.
+2020-12-25 17:04:39.1735 INFO Here is info message from the controller.
+2020-12-25 17:05:14.4478 INFO Here is info message from the controller.
+2020-12-25 17:05:32.9958 INFO Here is info message from the controller.
+2020-12-25 17:06:25.5926 INFO Here is info message from the controller.
+2020-12-25 17:08:27.7853 INFO Here is info message from the controller.
