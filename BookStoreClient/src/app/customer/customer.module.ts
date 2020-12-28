@@ -7,13 +7,17 @@ import { BookCollectionComponent } from './book-collection/book-collection.compo
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { BookListComponent } from './book-collection/book-list/book-list.component';
+import { CustomerHeaderComponent } from './layout/customer-header/customer-header.component';
+import { CustomerFooterComponent } from './layout/customer-footer/customer-footer.component';
+
 
 
 @NgModule({
-  declarations: [HomeComponent, BookCollectionComponent, CartComponent, CheckoutComponent, BookListComponent],
+  declarations: [HomeComponent, BookCollectionComponent, CartComponent, CheckoutComponent, BookListComponent, CustomerHeaderComponent, CustomerFooterComponent],
   imports: [
     CommonModule,
-    CustomerRoutingModule
+    CustomerRoutingModule,
+    
   ]
 })
 export class CustomerModule { }

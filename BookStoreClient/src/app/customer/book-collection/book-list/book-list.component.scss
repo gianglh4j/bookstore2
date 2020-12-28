@@ -1,0 +1,50 @@
+.book-wrap{
+    padding: 10px 0;
+    box-shadow: 3px 3px 8px -2px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin: 10px 5px;
+    position: relative;
+    .img-box{
+        vertical-align: bottom;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            text-align: center;
+        }
+    }
+    .book-content{
+        text-align: center;
+        padding: 5px 10px;
+        .bookname{
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 16px;
+        }
+    }
+    .book-act{
+        padding: 5px 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        a{
+            display: inline-block;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5);
+            transition: .3s;
+            &:hover{
+                color: #ff7b55;
+            }
+        }
+        .add-to-cart-btn{
+            margin-right: 10px;
+            i{
+                font-size: 22px;
+            }
+            
+        }
+
+    }
+}

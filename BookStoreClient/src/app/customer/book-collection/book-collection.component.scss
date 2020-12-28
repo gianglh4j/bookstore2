@@ -1,0 +1,25 @@
+.collection-content{
+    margin: 50px 0;
+}
+.collection-category-wrap{
+padding-right: 30px;
+}
+.collection-category{
+    border-right: 1px solid rgba($color: #000000, $alpha: .2);
+    .form-check{
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        padding-left: unset;
+        .form-check-input{
+            position: relative;
+            display: inline-block;
+            margin: unset;
+            margin-right: 3px;
+        }
+    }
+}
+.collection-title-head{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
