@@ -1,0 +1,70 @@
+2020-12-29 08:48:31.3005 INFO Here is info message from the controller.
+2020-12-29 08:48:36.9588 INFO Here is info message from the controller.
+2020-12-29 10:18:31.9217 INFO Here is info message from the controller.
+2020-12-29 10:20:54.2230 INFO Here is info message from the controller.
+2020-12-29 11:52:16.5785 INFO Here is info message from the controller.
+2020-12-29 13:41:19.7879 INFO Here is info message from the controller.
+2020-12-29 13:52:12.6093 INFO Here is info message from the controller.
+2020-12-29 15:27:32.0651 INFO Here is info message from the controller.
+2020-12-29 17:27:34.6242 INFO Here is info message from the controller.
+2020-12-29 17:27:37.4264 INFO Here is info message from the controller.
+2020-12-29 17:36:16.9940 INFO Here is info message from the controller.
+2020-12-29 17:47:21.9766 INFO Here is info message from the controller.
+2020-12-29 17:47:30.3376 INFO Here is info message from the controller.
+2020-12-29 17:52:23.5923 INFO Here is info message from the controller.
+2020-12-29 17:53:13.6326 INFO Here is info message from the controller.
+2020-12-29 17:53:15.2770 INFO Here is info message from the controller.
+2020-12-29 17:58:58.5067 INFO Here is info message from the controller.
+2020-12-29 18:08:05.0162 INFO Here is info message from the controller.
+2020-12-29 18:09:28.3123 INFO Here is info message from the controller.
+2020-12-29 18:12:11.3492 INFO Here is info message from the controller.
+2020-12-29 18:16:29.1827 INFO Here is info message from the controller.
+2020-12-29 18:19:21.2325 INFO Here is info message from the controller.
+2020-12-29 18:40:47.1612 INFO Here is info message from the controller.
+2020-12-29 18:41:14.0832 INFO Here is info message from the controller.
+2020-12-29 18:43:04.0160 INFO Here is info message from the controller.
+2020-12-29 18:43:58.6043 INFO Here is info message from the controller.
+2020-12-29 18:44:54.3038 INFO Here is info message from the controller.
+2020-12-29 18:46:09.3154 INFO Here is info message from the controller.
+2020-12-29 18:46:09.6208 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at BookStore.ApplicationLogic.BookApplicationLogics.getBooksFollowType(Int32 typeId) in D:\bookstore2\BookStore\BookStore\ApplicationLogic\BookApplicationLogics.cs:line 74
+   at BookStore.Controllers.BooksController.GetBookFollowType(Int32 id) in D:\bookstore2\BookStore\BookStore\Controllers\BookController.cs:line 41
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-29 18:51:16.9938 INFO Here is info message from the controller.
+2020-12-29 18:51:56.8390 INFO Here is info message from the controller.
+2020-12-29 18:52:54.8532 INFO Here is info message from the controller.
+2020-12-29 18:52:54.9197 ERROR Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at BookStore.ApplicationLogic.BookApplicationLogics.getBooksFollowType(Int32 typeId) in D:\bookstore2\BookStore\BookStore\ApplicationLogic\BookApplicationLogics.cs:line 74
+   at BookStore.Controllers.BooksController.GetBookFollowType(Int32 id) in D:\bookstore2\BookStore\BookStore\Controllers\BookController.cs:line 41
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-29 18:54:43.3234 INFO Here is info message from the controller.
+2020-12-29 18:54:45.6999 INFO Here is info message from the controller.
+2020-12-29 19:04:16.0746 INFO Here is info message from the controller.
+2020-12-29 19:09:23.6417 INFO Here is info message from the controller.
+2020-12-29 19:09:28.9810 INFO Here is info message from the controller.
+2020-12-29 19:09:42.1483 INFO Here is info message from the controller.
+2020-12-29 19:10:32.6964 INFO Here is info message from the controller.

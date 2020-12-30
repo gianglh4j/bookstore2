@@ -24,9 +24,9 @@
                   <a class="dropdown-item" href="#">Register</a>
                 </div>
               </div>
-              <div class="heading-cart-box"><a href="#"><i class="bi bi-cart3"></i></a>
+              <div class="heading-cart-box"><a [routerLink]="['/customer/cart']"><i class="bi bi-cart3"></i></a>
                 <div class="cart-info">
-                    <label for="">3</label>
+                    <label for="">{{amount}}</label>
               </div>
             </div>
           </div>

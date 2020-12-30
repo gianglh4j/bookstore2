@@ -6,7 +6,7 @@ import {AppRoutingModule} from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import {NgxsModule} from '@ngxs/store';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,9 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    TooltipModule.forRoot()
+    // NgxsModule.forRoot([BookState]),
+    NgxsModule.forRoot([], { developmentMode: true }),
+    
     
    
   ],

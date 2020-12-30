@@ -1,0 +1,15 @@
+<div class="collection-category">
+    <h3 class="collection-title-head">Category</h3>
+    <div class="form-check book-type-item" >
+        <input class="form-check-input" type="radio" name="exampleRadios" id="all-collection" (click)="getbookType(0)" checked >
+        <label class="form-check-label"  for="all-collection" [ngClass]="(0 == selectedBookTypeId)?'activedType':''"  >
+            All
+        </label>
+      </div>
+    <div class="form-check book-type-item" *ngFor="let booktype of booktypes" >
+        <input class="form-check-input" type="radio" name="exampleRadios" id="dasdsa{{booktype.bookTypeId}}" (click)="getbookType(booktype.bookTypeId)"  >
+        <label class="form-check-label"  for="dasdsa{{booktype.bookTypeId}}" [ngClass]="(booktype.bookTypeId == selectedBookTypeId)?'activedType':''"  >
+            {{booktype.bookTypeName}}
+        </label>
+      </div>
+</div>

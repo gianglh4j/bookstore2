@@ -1,0 +1,236 @@
+2020-12-30 13:42:30.0583 INFO Here is info message from the controller.
+2020-12-30 13:47:15.8273 INFO Here is info message from the controller.
+2020-12-30 13:47:56.0408 INFO Here is info message from the controller.
+2020-12-30 13:49:54.1924 INFO Here is info message from the controller.
+2020-12-30 13:50:09.1228 INFO Here is info message from the controller.
+2020-12-30 13:50:22.1525 INFO Here is info message from the controller.
+2020-12-30 13:50:28.0386 INFO Here is info message from the controller.
+2020-12-30 13:50:35.5645 INFO Here is info message from the controller.
+2020-12-30 13:52:41.7293 INFO Here is info message from the controller.
+2020-12-30 13:54:02.0444 INFO Here is info message from the controller.
+2020-12-30 13:54:29.9745 INFO Here is info message from the controller.
+2020-12-30 13:54:54.8409 INFO Here is info message from the controller.
+2020-12-30 13:55:11.5532 INFO Here is info message from the controller.
+2020-12-30 13:56:28.2826 INFO Here is info message from the controller.
+2020-12-30 13:56:53.0845 INFO Here is info message from the controller.
+2020-12-30 13:58:50.4705 INFO Here is info message from the controller.
+2020-12-30 14:01:07.8276 INFO Here is info message from the controller.
+2020-12-30 14:01:46.9799 INFO Here is info message from the controller.
+2020-12-30 14:03:17.6822 INFO Here is info message from the controller.
+2020-12-30 14:03:22.2837 INFO Here is info message from the controller.
+2020-12-30 14:03:24.5929 INFO Here is info message from the controller.
+2020-12-30 14:03:29.8149 INFO Here is info message from the controller.
+2020-12-30 14:03:41.4116 INFO Here is info message from the controller.
+2020-12-30 14:03:43.3096 INFO Here is info message from the controller.
+2020-12-30 14:03:48.9460 INFO Here is info message from the controller.
+2020-12-30 14:03:56.6178 INFO Here is info message from the controller.
+2020-12-30 14:03:58.6323 INFO Here is info message from the controller.
+2020-12-30 14:04:08.2739 INFO Here is info message from the controller.
+2020-12-30 14:04:11.3118 INFO Here is info message from the controller.
+2020-12-30 14:04:23.1034 INFO Here is info message from the controller.
+2020-12-30 14:21:41.1134 INFO Here is info message from the controller.
+2020-12-30 14:21:50.2415 INFO Here is info message from the controller.
+2020-12-30 14:23:16.5860 INFO Here is info message from the controller.
+2020-12-30 14:26:15.5942 INFO Here is info message from the controller.
+2020-12-30 14:26:19.2993 INFO Here is info message from the controller.
+2020-12-30 14:26:22.2068 INFO Here is info message from the controller.
+2020-12-30 14:30:46.4340 INFO Here is info message from the controller.
+2020-12-30 14:44:53.2985 INFO Here is info message from the controller.
+2020-12-30 14:45:23.7767 INFO Here is info message from the controller.
+2020-12-30 14:46:32.1877 INFO Here is info message from the controller.
+2020-12-30 14:46:35.4971 INFO Here is info message from the controller.
+2020-12-30 14:49:30.8616 INFO Here is info message from the controller.
+2020-12-30 14:49:32.6473 INFO Here is info message from the controller.
+2020-12-30 14:49:34.3527 INFO Here is info message from the controller.
+2020-12-30 14:49:51.2018 INFO Here is info message from the controller.
+2020-12-30 14:49:53.1282 INFO Here is info message from the controller.
+2020-12-30 14:50:20.0739 INFO Here is info message from the controller.
+2020-12-30 14:50:29.4347 INFO Here is info message from the controller.
+2020-12-30 14:50:34.4355 INFO Here is info message from the controller.
+2020-12-30 14:50:36.4487 INFO Here is info message from the controller.
+2020-12-30 14:50:52.6634 INFO Here is info message from the controller.
+2020-12-30 14:51:01.6521 INFO Here is info message from the controller.
+2020-12-30 14:53:25.3141 INFO Here is info message from the controller.
+2020-12-30 14:55:48.1174 INFO Here is info message from the controller.
+2020-12-30 14:55:52.2300 INFO Here is info message from the controller.
+2020-12-30 14:56:11.8085 INFO Here is info message from the controller.
+2020-12-30 14:56:37.3053 INFO Here is info message from the controller.
+2020-12-30 14:57:27.0069 INFO Here is info message from the controller.
+2020-12-30 15:01:05.4720 INFO Here is info message from the controller.
+2020-12-30 15:27:51.6607 INFO Here is info message from the controller.
+2020-12-30 15:28:06.4500 INFO Here is info message from the controller.
+2020-12-30 15:30:16.4094 INFO Here is info message from the controller.
+2020-12-30 15:30:31.1087 INFO Here is info message from the controller.
+2020-12-30 15:30:54.9943 INFO Here is info message from the controller.
+2020-12-30 15:31:11.1550 INFO Here is info message from the controller.
+2020-12-30 15:31:35.5167 INFO Here is info message from the controller.
+2020-12-30 15:32:02.8670 INFO Here is info message from the controller.
+2020-12-30 15:32:50.5779 INFO Here is info message from the controller.
+2020-12-30 15:32:58.2931 INFO Here is info message from the controller.
+2020-12-30 15:35:58.2551 INFO Here is info message from the controller.
+2020-12-30 15:40:21.7388 INFO Here is info message from the controller.
+2020-12-30 15:45:00.7778 INFO Here is info message from the controller.
+2020-12-30 15:45:31.4655 INFO Here is info message from the controller.
+2020-12-30 15:48:08.2065 INFO Here is info message from the controller.
+2020-12-30 15:48:23.6449 INFO Here is info message from the controller.
+2020-12-30 15:49:07.9876 INFO Here is info message from the controller.
+2020-12-30 15:51:00.1326 INFO Here is info message from the controller.
+2020-12-30 15:51:16.0919 INFO Here is info message from the controller.
+2020-12-30 15:53:27.4374 INFO Here is info message from the controller.
+2020-12-30 15:54:01.2010 INFO Here is info message from the controller.
+2020-12-30 16:02:27.3095 INFO Here is info message from the controller.
+2020-12-30 16:08:31.5437 INFO Here is info message from the controller.
+2020-12-30 16:32:46.7638 INFO Here is info message from the controller.
+2020-12-30 16:41:28.2885 INFO Here is info message from the controller.
+2020-12-30 16:41:31.6437 INFO Here is info message from the controller.
+2020-12-30 16:43:29.4669 INFO Here is info message from the controller.
+2020-12-30 16:46:35.4305 INFO Here is info message from the controller.
+2020-12-30 16:52:50.3216 INFO Here is info message from the controller.
+2020-12-30 16:53:14.7291 INFO Here is info message from the controller.
+2020-12-30 16:55:45.3991 INFO Here is info message from the controller.
+2020-12-30 17:04:04.4370 INFO Here is info message from the controller.
+2020-12-30 17:04:11.8078 INFO Here is info message from the controller.
+2020-12-30 17:07:38.0837 INFO Here is info message from the controller.
+2020-12-30 17:09:51.3459 INFO Here is info message from the controller.
+2020-12-30 17:11:05.8007 INFO Here is info message from the controller.
+2020-12-30 17:12:56.4401 INFO Here is info message from the controller.
+2020-12-30 17:14:33.7307 INFO Here is info message from the controller.
+2020-12-30 17:46:23.0946 INFO Here is info message from the controller.
+2020-12-30 17:50:11.7630 INFO Here is info message from the controller.
+2020-12-30 17:51:39.8410 INFO Here is info message from the controller.
+2020-12-30 17:52:10.9790 INFO Here is info message from the controller.
+2020-12-30 17:53:36.9141 INFO Here is info message from the controller.
+2020-12-30 17:55:18.8840 INFO Here is info message from the controller.
+2020-12-30 17:58:16.9037 ERROR Something went wrong: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__OrderB_De__BookI__2E1BDC42". The conflict occurred in database "BookStore1", table "dbo.Book", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d48fd55d-6a42-4796-9f03-f30818e0eec7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BookStore.Repository.OrderRepository.AddOrder(OrderB order) in D:\bookstore2\BookStore\BookStore\Repository\OrderRepository.cs:line 34
+   at BookStore.DomainLogic.OrderLogic.AddOrder(OrderB order) in D:\bookstore2\BookStore\BookStore\DomainLogic\OrderLogic.cs:line 37
+   at BookStore.ApplicationLogic.OrderApplicationLogics.addOrder(OrderDTO orderDTO) in D:\bookstore2\BookStore\BookStore\ApplicationLogic\OrderApplicationLogics.cs:line 46
+   at BookStore.Controllers.OrderBsController.PostOrderB(OrderDTO order) in D:\bookstore2\BookStore\BookStore\Controllers\OrderBsController.cs:line 89
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-30 17:58:26.0200 ERROR Something went wrong: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__OrderB_De__BookI__2E1BDC42". The conflict occurred in database "BookStore1", table "dbo.Book", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d48fd55d-6a42-4796-9f03-f30818e0eec7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BookStore.Repository.OrderRepository.AddOrder(OrderB order) in D:\bookstore2\BookStore\BookStore\Repository\OrderRepository.cs:line 34
+   at BookStore.DomainLogic.OrderLogic.AddOrder(OrderB order) in D:\bookstore2\BookStore\BookStore\DomainLogic\OrderLogic.cs:line 37
+   at BookStore.ApplicationLogic.OrderApplicationLogics.addOrder(OrderDTO orderDTO) in D:\bookstore2\BookStore\BookStore\ApplicationLogic\OrderApplicationLogics.cs:line 46
+   at BookStore.Controllers.OrderBsController.PostOrderB(OrderDTO order) in D:\bookstore2\BookStore\BookStore\Controllers\OrderBsController.cs:line 89
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-30 17:58:43.3694 ERROR Something went wrong: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__OrderB_De__BookI__2E1BDC42". The conflict occurred in database "BookStore1", table "dbo.Book", column 'BookId'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d48fd55d-6a42-4796-9f03-f30818e0eec7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BookStore.Repository.OrderRepository.AddOrder(OrderB order) in D:\bookstore2\BookStore\BookStore\Repository\OrderRepository.cs:line 34
+   at BookStore.DomainLogic.OrderLogic.AddOrder(OrderB order) in D:\bookstore2\BookStore\BookStore\DomainLogic\OrderLogic.cs:line 37
+   at BookStore.ApplicationLogic.OrderApplicationLogics.addOrder(OrderDTO orderDTO) in D:\bookstore2\BookStore\BookStore\ApplicationLogic\OrderApplicationLogics.cs:line 46
+   at BookStore.Controllers.OrderBsController.PostOrderB(OrderDTO order) in D:\bookstore2\BookStore\BookStore\Controllers\OrderBsController.cs:line 89
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at BookStore.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in D:\bookstore2\BookStore\BookStore\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 25
+2020-12-30 18:16:58.9991 INFO Here is info message from the controller.
+2020-12-30 18:21:31.7495 INFO Here is info message from the controller.
+2020-12-30 18:22:11.8077 INFO Here is info message from the controller.
+2020-12-30 18:22:39.8418 INFO Here is info message from the controller.
+2020-12-30 18:23:07.4171 INFO Here is info message from the controller.
+2020-12-30 18:53:12.9735 INFO Here is info message from the controller.
+2020-12-30 19:00:04.8558 INFO Here is info message from the controller.
+2020-12-30 19:02:35.1797 INFO Here is info message from the controller.
+2020-12-30 19:03:50.2052 INFO Here is info message from the controller.
+2020-12-30 19:04:17.0117 INFO Here is info message from the controller.
+2020-12-30 19:07:56.0997 INFO Here is info message from the controller.
+2020-12-30 19:13:17.4537 INFO Here is info message from the controller.
+2020-12-30 19:13:20.1016 INFO Here is info message from the controller.

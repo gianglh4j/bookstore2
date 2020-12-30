@@ -1,6 +1,5 @@
-interface BookType {
-    bookTypeId: number, bookTypeName: string
-}
+
+import {BookType} from "./booktype";
 
 export interface Book {
     bookId :number,
@@ -9,6 +8,5 @@ export interface Book {
     bookPrice:number,
     isDeleted:boolean,
     bookTypes: BookType[]
-
 }
 

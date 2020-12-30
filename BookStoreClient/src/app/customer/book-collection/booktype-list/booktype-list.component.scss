@@ -1,0 +1,27 @@
+.collection-category{
+    border-right: 1px solid rgba($color: #000000, $alpha: .2);
+    .form-check{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        padding-left: unset;
+        .form-check-input{
+            position: relative;
+            display: inline-block;
+            margin: unset;
+            margin-right: 5px;
+        }
+        .form-check-label{
+            cursor: pointer;
+        }
+    }
+}
+.collection-title-head{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.activedType{
+    color: #ff7b55;
+}

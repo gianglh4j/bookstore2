@@ -1,1 +1,42 @@
-<p>cart works!</p>
+<div class="cart-container">
+    <div class="container">
+        <h2>Shopping cart</h2>
+        <div class="cart-wrapper">
+            <div class="row">
+                <div class="col-12 col-sm-8">
+                    <h3>cart ({{amount}} item)</h3>
+
+                    <div class="book-list">
+                            <div class="book-item" *ngFor="let cartItem of cartItems">
+                                <div class="img-box">
+                                    <img src={{cartItem.book.bookImage}} alt="">
+                                </div>
+                                <div class="cart-book-info">
+                                    <div class="book-info-wrap">
+                                        <div class="book-name">{{cartItem.book.bookName}}</div>
+                                        <div class="book-price">{{cartItem.book.bookPrice}}</div>
+                                    </div>
+                                    
+                                    <a href="" class="btn-remove-item">remove</a>
+                                </div>
+                                <div class="book-item-quanlity-wrap">
+                                    <div class="item-quanlity">
+                                        <a  class="btn-decrease" [routerLink]=""
+                                        queryParamsHandling="preserve" (click)="decreaseItem(cartItem.book)">-</a>
+                                        <p class="quanlity">{{cartItem.quantity}}</p>
+                                        <a href="" class="btn-increase">+</a>
+                                    </div>
+                                    <div class="item-total">
+                                        {{+(cartItem.book.bookPrice * cartItem.quantity)  }}
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    the total of mount
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
